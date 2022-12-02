@@ -39,11 +39,11 @@ nav {
 }
 #hero-msg h1{
     text-align: center;
-    color:#caf0f8;
+    color:#0077b6;
 }
 #hero-msg h4{
     text-align: center;
-    color:#caf0f8;
+    color:#0077b6;
 }
 #hero-img {
     width: 100%;
@@ -260,6 +260,97 @@ h3 {
     padding-top: 10px;
 }
 
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;    
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #0077b6;
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #caf0f8;
+}
+
+/* Caption text */
+.text {
+  color: #0077b6;
+  font-size: 24px;
+  padding: 8px 12px;    
+  position: absolute;
+  grid-column: 1/3;
+  grid-row: 1/1;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #0077b6;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 
 /* PRODUCTS */
